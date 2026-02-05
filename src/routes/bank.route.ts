@@ -14,6 +14,6 @@ router.post("/", authenticate, createBank);
 router.get("/", getBanks);
 router.get("/:id", getBankById);
 router.put("/:id", authenticate, updateBank);
-router.delete("/", authenticate, deleteBank);
+router.delete("/:id", authenticate, deleteBank);
 
 export default router;
