@@ -14,7 +14,7 @@ const ProductSchema: Schema = new Schema(
     name: { type: String, required: true },
     description: { type: String, required: true },
     stock: { type: Number, required: true },
-    Price: { type: Number, required: true },
+    price: { type: Number, required: true },
     imageUrl: { type: String, required: true },
     category: {
       type: mongoose.Types.ObjectId,

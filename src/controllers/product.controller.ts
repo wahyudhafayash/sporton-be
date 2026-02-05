@@ -57,7 +57,7 @@ export const updateProduct = async (
   try {
     const productData = req.body;
     if (req.file) {
-      productData.umageUrl = req.file.path;
+      productData.imageUrl = req.file.path;
     }
     const product = await Product.findByIdAndUpdate(
       req.params.id,
